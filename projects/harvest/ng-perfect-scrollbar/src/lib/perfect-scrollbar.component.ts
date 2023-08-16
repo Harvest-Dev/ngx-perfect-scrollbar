@@ -17,6 +17,7 @@ import {
     PLATFORM_ID,
     ViewChild,
     ViewEncapsulation,
+    booleanAttribute,
 } from '@angular/core';
 
 import { PerfectScrollbarDirective } from './perfect-scrollbar.directive';
@@ -56,36 +57,36 @@ export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
 
     private stateTimeout: number | null = null;
 
-    private readonly ngDestroy: Subject<void> = new Subject();
+    private readonly ngDestroy = new Subject<void>();
 
-    private readonly stateUpdate: Subject<string> = new Subject();
+    private readonly stateUpdate = new Subject<string>();
 
-    @Input() disabled: boolean = false;
+    @Input({ transform: booleanAttribute }) disabled: boolean = false;
 
-    @Input() usePSClass: boolean = true;
+    @Input({ transform: booleanAttribute }) usePSClass: boolean = true;
 
     @HostBinding('class.ps-show-limits')
-    @Input()
+    @Input({ transform: booleanAttribute })
     autoPropagation: boolean = false;
 
     @HostBinding('class.ps-show-active')
-    @Input()
+    @Input({ transform: booleanAttribute })
     scrollIndicators: boolean = false;
 
     @Input() config?: PerfectScrollbarConfigInterface;
 
-    @Output() psScrollY: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psScrollX: EventEmitter<any> = new EventEmitter<any>();
+    @Output() psScrollY = new EventEmitter<any>();
+    @Output() psScrollX = new EventEmitter<any>();
 
-    @Output() psScrollUp: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psScrollDown: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psScrollLeft: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psScrollRight: EventEmitter<any> = new EventEmitter<any>();
+    @Output() psScrollUp = new EventEmitter<any>();
+    @Output() psScrollDown = new EventEmitter<any>();
+    @Output() psScrollLeft = new EventEmitter<any>();
+    @Output() psScrollRight = new EventEmitter<any>();
 
-    @Output() psYReachEnd: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psYReachStart: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psXReachEnd: EventEmitter<any> = new EventEmitter<any>();
-    @Output() psXReachStart: EventEmitter<any> = new EventEmitter<any>();
+    @Output() psYReachEnd = new EventEmitter<any>();
+    @Output() psYReachStart = new EventEmitter<any>();
+    @Output() psXReachEnd = new EventEmitter<any>();
+    @Output() psXReachStart = new EventEmitter<any>();
 
     @ViewChild(PerfectScrollbarDirective, { static: true })
     directiveRef?: PerfectScrollbarDirective;
