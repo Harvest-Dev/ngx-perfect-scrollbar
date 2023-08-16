@@ -4,9 +4,7 @@
 
 ### Quick links
 
-[Example application](https://zefoy.github.io/ngx-perfect-scrollbar/)
-|
-[StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master)
+[Example application](https://harvest-dev.github.io/ngx-perfect-scrollbar/dist/ng-perfect-scrollbar/)
 |
 [Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
 
