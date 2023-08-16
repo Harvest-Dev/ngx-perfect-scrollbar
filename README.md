@@ -1,44 +1,27 @@
+[![npm version](https://badge.fury.io/js/@harvest-dev/ngx-perfect-scrollbar.svg)](https://badge.fury.io/js/@harvest-dev/ngx-perfect-scrollbar) [![Downloads](https://img.shields.io/npm/dm/@harvest/ngx-perfect-scrollbar.svg)](https://www.npmjs.com/package/@harvest-dev/ngx-perfect-scrollbar) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Harvest-Dev/ng-select2/master/LICENSE.md)
+
 # Angular Perfect Scrollbar
-
-<a href="https://badge.fury.io/js/ngx-perfect-scrollbar"><img src="https://badge.fury.io/js/ngx-perfect-scrollbar.svg" align="right" alt="npm version" height="18"></a>
-
-This is an Angular wrapper library for the [Perfect Scrollbar](https://utatti.github.io/perfect-scrollbar/). To use this library you should get familiar with the Perfect Scrollbar documentation as well since this documentation only explains details specific to this wrapper.
-
-This documentation is for the latest 5/6.x.x version which requires Angular 5 or newer. For Angular 4 you need to use the latest 4.x.x version. Documentation for the 4.x.x can be found from <a href="https://github.com/zefoy/ngx-perfect-scrollbar/tree/4.x.x/">here</a>.
-
-### EOL notice
-
-Version 10.0.0 will be the last release of this library. I recommend you to switch to using native Angular scrollbar libraries such as ngx-scrollbar. There are also forks available (just search with perfect-scrollbar from npm registry) if you really want to use a wrapper library for perfect scrollbar. For the sake of good code and practices I would personally use a native Angular libraries since using Angular wrappers for DOM libraries will always have limitations and performance issues.
-
-Even though I should not need to tell about the motivation for EOL, but since some seem to think its required the main reason for EOL this library was that at the time perfect-scrollbar library itself was not maintained (do not know the current situation though) and none of the bugs it had were being addressed. That and the native Angular libraries coming to existence that do this better sealed the decision to end this library.
 
 ### Quick links
 
 [Example application](https://zefoy.github.io/ngx-perfect-scrollbar/)
- |
+|
 [StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master)
- |
+|
 [Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
-
-### Building the library
-
-```bash
-npm install
-npm run build
-```
-
-### Running the example
-
-```bash
-npm install
-npm run start
-```
 
 ### Installing and usage
 
 ```bash
-npm install ngx-perfect-scrollbar --save
+npm install @harvest-dev/ngx-perfect-scrollbar --save
 ```
+
+### Requirements
+
+-   peerDependencies:
+
+    -   `angular` 16.1.0 and more
+    -   `angular/cdk` 16.1.0 and more
 
 ##### Load the module for your app (with global configuration):
 
@@ -80,7 +63,7 @@ Simply replace the element that would ordinarily be passed to `PerfectScrollbar`
 
 ```html
 <perfect-scrollbar style="max-width: 600px; max-height: 400px;" [config]="config">
-  <div>Scrollable content</div>
+    <div>Scrollable content</div>
 </perfect-scrollbar>
 ```
 
@@ -110,7 +93,7 @@ Perfect Scrollbar directive should be used with div elements and can take option
 
 ```html
 <div class="ps" style="position: relative; max-width: 600px; max-height: 400px;" [perfectScrollbar]="config">
-  <div>Scrollable content</div>
+    <div>Scrollable content</div>
 </div>
 ```
 
@@ -127,17 +110,17 @@ Perfect Scrollbar directive should be used with div elements and can take option
 ##### Available configuration options (custom / global configuration):
 
 ```javascript
-handlers                // List of event handlers to scroll the element.
-wheelSpeed              // Scroll speed for the mousewheel event (Default: 1).
-swipeEasing             // Use easing for the swipe scrolling (Default: true).
-suppressScrollX         // Disable X axis in all situations (Default: false).
-suppressScrollY         // Disable Y axis in all situations (Default: false).
-wheelPropagation        // Propagate wheel events at the end (Default: false).
-useBothWheelAxes        // Always use both of the wheel axes (Default: false).
-minScrollbarLength      // Minimum size (px) for the scrollbar (Default: null).
-maxScrollbarLength      // Maximum size (px) for the scrollbar (Default: null).
-scrollXMarginOffset     // Offset before enabling the X scroller (Default: 0).
-scrollYMarginOffset     // Offset before enabling the Y scroller (Default: 0).
+handlers; // List of event handlers to scroll the element.
+wheelSpeed; // Scroll speed for the mousewheel event (Default: 1).
+swipeEasing; // Use easing for the swipe scrolling (Default: true).
+suppressScrollX; // Disable X axis in all situations (Default: false).
+suppressScrollY; // Disable Y axis in all situations (Default: false).
+wheelPropagation; // Propagate wheel events at the end (Default: false).
+useBothWheelAxes; // Always use both of the wheel axes (Default: false).
+minScrollbarLength; // Minimum size (px) for the scrollbar (Default: null).
+maxScrollbarLength; // Maximum size (px) for the scrollbar (Default: null).
+scrollXMarginOffset; // Offset before enabling the X scroller (Default: 0).
+scrollYMarginOffset; // Offset before enabling the Y scroller (Default: 0).
 ```
 
 For more detailed documentation with all the supported events / options see the the Perfect Scrollbar documentation.
@@ -167,3 +150,23 @@ scrollToElement(element, offset?, speed?)   // Animate scroll to given or matchi
 ```
 
 Above functions can be accessed through the directive reference (available as directiveRef in the component). Position and offset needs to be given in pixels and speed in milliseconds.
+
+### Publishing the library
+
+```
+npm run build:lib
+npm run publish:lib
+```
+
+### Update Demo
+
+```
+npm run build:demo
+```
+
+#### Running the example
+
+```bash
+npm install
+npm run start
+```
