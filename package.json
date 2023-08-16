@@ -6,9 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "build:lib": "ng build @harvest-dev/ng-perfect-scrollbar --configuration production && cp *.md dist/harvest-dev/ng-perfect-scrollbar",
+    "build:lib": "ng build @harvest-dev/ng-perfect-scrollbar --configuration production && cp *.md dist/harvest/ng-perfect-scrollbar",
     "build:demo": "ng build ng-perfect-scrollbar --configuration production",
-    "publish:lib": "cd dist/harvest-dev/ng-perfect-scrollbar && npm publish ",
+    "publish:lib": "cd dist/harvest/ng-perfect-scrollbar && npm publish ",
     "test": "ng test"
   },
   "private": true,

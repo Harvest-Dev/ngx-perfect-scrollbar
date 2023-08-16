@@ -1,6 +1,6 @@
 {
-  "name": "@harvest/ng-perfect-scrollbar",
-  "version": "16.1.0",
+  "name": "@harvest-dev/ng-perfect-scrollbar",
+  "version": "16.1.1",
   "license": "MIT",
   "private": false,
   "peerDependencies": {
@@ -12,12 +12,13 @@
   },
   "sideEffects": false,
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "bugs": {
-    "url": "https://git.ikilote.net/typescript/json2html/-/issues"
+    "url": "https://github.com/Harvest-Dev/ngx-perfect-scrollbar/issues"
   },
-  "homepage": "https://git.ikilote.net/typescript/json2html",
+  "homepage": "https://github.com/Harvest-Dev/ngx-perfect-scrollbar/",
   "keywords": [
     "typescript",
     "angular",

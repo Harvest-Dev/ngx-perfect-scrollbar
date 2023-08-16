@@ -85,7 +85,7 @@
         }
       }
     },
-    "@harvest/ng-perfect-scrollbar": {
+    "@harvest-dev/ng-perfect-scrollbar": {
       "projectType": "library",
       "root": "projects/harvest/ng-perfect-scrollbar",
       "sourceRoot": "projects/harvest/ng-perfect-scrollbar/src",
