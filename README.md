@@ -2,6 +2,8 @@
 
 # Angular Perfect Scrollbar
 
+This fork of [ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar) is an Angular wrapper library for the [Perfect Scrollbar](https://utatti.github.io/perfect-scrollbar/). To use this library you should get familiar with the Perfect Scrollbar documentation as well since this documentation only explains details specific to this wrapper.
+
 ### Quick links
 
 [Example application](https://harvest-dev.github.io/ngx-perfect-scrollbar/dist/ng-perfect-scrollbar/)
