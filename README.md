@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/@harvest-dev/ng-perfect-scrollbar.svg)](https://badge.fury.io/js/@harvest-dev/ng-perfect-scrollbar) [![Downloads](https://img.shields.io/npm/dm/@harvest/ngx-perfect-scrollbar.svg)](https://www.npmjs.com/package/@harvest-dev/ng-perfect-scrollbar) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Harvest-Dev/ng-select2/master/LICENSE.md)
+[![npm version](https://badge.fury.io/js/@harvest-dev%2Fng-perfect-scrollbar.svg)](https://badge.fury.io/js/@harvest-dev%2Fng-perfect-scrollbar) [![Downloads](https://img.shields.io/npm/dm/@harvest-dev/ng-perfect-scrollbar.svg)](https://www.npmjs.com/package/@harvest-dev/ng-perfect-scrollbar) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Harvest-Dev/ng-select2/master/LICENSE.md)
 
 # Angular Perfect Scrollbar
 
