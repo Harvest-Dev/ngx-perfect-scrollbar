@@ -1,7 +1,7 @@
 {
   "name": "@harvest-dev/ng-perfect-scrollbar",
   "description": "Angular wrapper library for the Perfect Scrollbar",
-  "version": "16.1.2",
+  "version": "16.1.3",
   "license": "MIT",
   "private": false,
   "peerDependencies": {
@@ -26,5 +26,9 @@
     "typescript",
     "angular",
     "perfect-scrollbar"
-  ]
+  ],
+  "engines": {
+    "node": "20.5.0",
+    "npm": "9.8.0"
+  }
 }
