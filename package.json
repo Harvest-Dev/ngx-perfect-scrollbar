@@ -2,14 +2,14 @@
   "name": "ng-perfect-scrollbar",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "build:lib": "ng build @harvest-dev/ng-perfect-scrollbar --configuration production && cp *.md dist/harvest/ng-perfect-scrollbar",
-    "build:demo": "ng build ng-perfect-scrollbar --configuration production",
+    "ng": "node ./node_modules/@angular/cli/bin/ng",
+    "start": "npm run ng -- serve",
+    "build": "npm run ng -- build",
+    "watch": "npm run ng -- build --watch --configuration development",
+    "build:lib": "npm run ng -- build @harvest-dev/ng-perfect-scrollbar --configuration production && cp *.md dist/harvest/ng-perfect-scrollbar",
+    "build:demo": "npm run ng -- build ng-perfect-scrollbar --configuration production",
     "publish:lib": "cd dist/harvest/ng-perfect-scrollbar && npm publish ",
-    "test": "ng test"
+    "test": "npm run ng -- test"
   },
   "private": true,
   "dependencies": {
@@ -40,5 +40,9 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^16.2.0",
     "typescript": "~5.1.3"
+  },
+  "engines": {
+    "node": "20.5.0",
+    "npm": "9.8.0"
   }
 }
