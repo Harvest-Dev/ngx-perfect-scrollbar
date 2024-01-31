@@ -31,6 +31,10 @@
 
 .action-container,
 .content-container {
+    display: flex;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 auto;
     position: relative;
 
     overflow: auto;
@@ -42,28 +46,12 @@
     background-color: #fff;
 }
 
-.content-container {
-    display: flex;
-    place-content: stretch flex-start;
-    align-items: stretch;
-    flex: 1 1 auto;
-}
-
 .action-container {
-    display: flex;
     flex-direction: column;
-    place-content: stretch flex-start;
-    align-items: stretch;
-    flex: 1 1 auto;
     padding: 16px;
 }
 
 .content-container {
-    display: flex;
-    flex-direction: column;
-    place-content: stretch flex-start;
-    align-items: stretch;
-    flex: 1 1 auto;
     position: relative;
 
     min-height: 0;
@@ -72,26 +60,22 @@
     border: 1px solid #ccc;
 }
 
+.vertical-container,
 .horizontal-container {
     display: flex;
-    flex-direction: row;
     place-content: stretch flex-start;
     align-items: stretch;
     flex: 1 1 100%;
-    max-height: 100%;
-
     min-height: 0 !important;
 }
 
-.vertical-container {
-    display: flex;
-    flex-direction: column;
-    place-content: stretch flex-start;
-    align-items: stretch;
-    flex: 1 1 100%;
-    max-width: 50%;
+.horizontal-container {
+    max-height: 100%;
+}
 
-    min-height: 0 !important;
+.vertical-container {
+    flex-direction: column;
+    max-width: 50%;
 }
 
 .action-button {
