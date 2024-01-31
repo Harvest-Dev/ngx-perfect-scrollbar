@@ -7,9 +7,11 @@
 }
 
 .box-container {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 800px;
-    height: 500px;
+    height: 550px;
     max-width: 90%;
     max-height: 90%;
     padding: 24px;
@@ -29,6 +31,10 @@
 
 .action-container,
 .content-container {
+    display: flex;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 auto;
     position: relative;
 
     overflow: auto;
@@ -41,6 +47,7 @@
 }
 
 .action-container {
+    flex-direction: column;
     padding: 16px;
 }
 
@@ -55,10 +62,28 @@
 
 .vertical-container,
 .horizontal-container {
+    display: flex;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 100%;
     min-height: 0 !important;
 }
 
+.horizontal-container {
+    max-height: 100%;
+}
+
+.vertical-container {
+    flex-direction: column;
+    max-width: 50%;
+}
+
 .action-button {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch center;
+    align-items: stretch;
+    flex: 1 1 auto;
     box-sizing: border-box;
     width: calc(100% - 16px);
     min-height: 35px;
@@ -80,6 +105,7 @@
 }
 
 .scroll-container {
+    flex: 1 1 auto;
     position: relative;
 }
 
