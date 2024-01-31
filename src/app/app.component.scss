@@ -7,9 +7,11 @@
 }
 
 .box-container {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 800px;
-    height: 500px;
+    height: 550px;
     max-width: 90%;
     max-height: 90%;
     padding: 24px;
@@ -40,11 +42,28 @@
     background-color: #fff;
 }
 
+.content-container {
+    display: flex;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 auto;
+}
+
 .action-container {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 auto;
     padding: 16px;
 }
 
 .content-container {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 auto;
     position: relative;
 
     min-height: 0;
@@ -53,12 +72,34 @@
     border: 1px solid #ccc;
 }
 
-.vertical-container,
 .horizontal-container {
+    display: flex;
+    flex-direction: row;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 100%;
+    max-height: 100%;
+
+    min-height: 0 !important;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch flex-start;
+    align-items: stretch;
+    flex: 1 1 100%;
+    max-width: 50%;
+
     min-height: 0 !important;
 }
 
 .action-button {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch center;
+    align-items: stretch;
+    flex: 1 1 auto;
     box-sizing: border-box;
     width: calc(100% - 16px);
     min-height: 35px;
@@ -80,6 +121,7 @@
 }
 
 .scroll-container {
+    flex: 1 1 auto;
     position: relative;
 }
 
