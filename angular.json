@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-perfect-scrollbar:build:production"
+              "buildTarget": "ng-perfect-scrollbar:build:production"
             },
             "development": {
-              "browserTarget": "ng-perfect-scrollbar:build:development"
+              "buildTarget": "ng-perfect-scrollbar:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-perfect-scrollbar:build"
+            "buildTarget": "ng-perfect-scrollbar:build"
           }
         },
         "test": {
