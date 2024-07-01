@@ -1,5 +1,11 @@
 # Changelog of @harvest/ng-perfect-scrollbar
 
+## 18.0.0 (2024-07-01)
+
+### Changes
+
+-   Update to Angular 18.0
+
 ## 16.1.3 (2023-09-11)
 
 ### Changes
