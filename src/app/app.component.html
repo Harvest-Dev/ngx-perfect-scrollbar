@@ -30,8 +30,8 @@
             <div class="box-title">Perfect Scrollbar</div>
 
             <div class="content-container">
+                @if (type === 'component') {
                 <perfect-scrollbar
-                    *ngIf="type === 'component'"
                     class="scroll-container"
                     [config]="config"
                     [scrollIndicators]="true"
@@ -70,9 +70,8 @@
                         library<br />
                     </div>
                 </perfect-scrollbar>
-
+                } @if (type === 'directive') {
                 <div
-                    *ngIf="type === 'directive'"
                     class="scroll-container ps"
                     [perfectScrollbar]="config"
                     (psXReachEnd)="onScrollEvent($event)"
@@ -110,6 +109,7 @@
                         library<br />
                     </div>
                 </div>
+                }
             </div>
         </div>
     </div>

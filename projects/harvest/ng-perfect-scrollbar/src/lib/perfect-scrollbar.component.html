@@ -3,8 +3,8 @@
         <ng-content></ng-content>
     </div>
 
+    @if (scrollIndicators) {
     <div
-        *ngIf="scrollIndicators"
         class="ps-overlay"
         [class.ps-at-top]="states.top"
         [class.ps-at-left]="states.left"
@@ -16,4 +16,5 @@
         <div class="ps-indicator-right" [class.ps-indicator-show]="indicatorX && interaction"></div>
         <div class="ps-indicator-bottom" [class.ps-indicator-show]="indicatorY && interaction"></div>
     </div>
+    }
 </div>
