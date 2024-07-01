@@ -6,7 +6,7 @@ This fork of [ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scroll
 
 ### Quick links
 
-[Example application](https://harvest-dev.github.io/ngx-perfect-scrollbar/dist/ng-perfect-scrollbar/)
+[Example application](https://harvest-dev.github.io/ngx-perfect-scrollbar/dist/ng-perfect-scrollbar/browser)
 |
 [Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
 
@@ -20,8 +20,8 @@ npm install @harvest-dev/ng-perfect-scrollbar --save
 
 -   peerDependencies:
 
-    -   `angular` 16.1.0 and more
-    -   `angular/cdk` 16.1.0 and more
+    -   `angular` 18.0.0 and more
+    -   `angular/cdk` 18.0.0 and more
 
 ##### Load the module for your app (with global configuration):
 

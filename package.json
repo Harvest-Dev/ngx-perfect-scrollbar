@@ -22,8 +22,8 @@
     "@angular/platform-browser-dynamic": "^18.0.5",
     "@angular/router": "^18.0.5",
     "perfect-scrollbar": "^1.5.5",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.3",
     "zone.js": "~0.14.7"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "typescript": "~5.4.5"
   },
   "engines": {
-    "node": "20.5.0",
-    "npm": "9.8.0"
+    "node": "20.14.0",
+    "npm": "10.7.0"
   }
 }
