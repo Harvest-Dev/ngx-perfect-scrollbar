@@ -58,6 +58,14 @@
     min-height: 0 !important;
 }
 
+.horizontal-container {
+    display: flex;
+}
+
+.vertical-container {
+    width: 50%;
+}
+
 .action-button {
     box-sizing: border-box;
     width: calc(100% - 16px);
